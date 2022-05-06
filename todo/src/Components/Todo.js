@@ -35,7 +35,7 @@ export default class Todo extends Component {
         return (
             <div>
                 <input type="text" value={this.state.currTask} onChange={this.handleTask}/>
-                <button onClick={this.handleSubmit}>Submit</button>
+                <button onClick={this.handleSubmit} disabled={!this.state.currTask}>Submit</button>
                 {/* <p>{this.state.tasks[0].task}</p> */}
                 <ul>
                 {
